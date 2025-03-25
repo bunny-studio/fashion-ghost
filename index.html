@@ -1,314 +1,332 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Home | Fashion Ghost</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-    <link rel='stylesheet' href='./css/style.css'>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:wght@300;400;500&display=swap"
-        rel="stylesheet">
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-</head>
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <title>Home | Fashion Ghost</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+        <link rel='stylesheet' href='./css/style.css'>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:wght@300;400;500&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/all.css">
+    </head>
 
-<body>
-    <div class="header">
-        <div class="container">
-            <div class="navbar">
-                <div class="logo">
-                    <img src="logoandicons/logo1 (1).png" width="125px">
+    <body>
+        <div class="header">
+            <div class="container">
+                <div class="navbar">
+                    <div class="logo">
+                        <img src="logoandicons/logo1 (1).png" width="125px">
+                    </div>
+                    <nav>
+                        <ul id="menuitems">
+                            <li><a href="index.html"><i class="far fa-home"></i>Home</a></li>
+                            <li><a href="#products"><i class="far fa-bags-shopping"></i>Products</>
+                            </li>
+                            <li><a href="404.html"><i class="far fa-user"></i>Account</a></li>
+                            <li><a href="cart.html" class="cart" id="cart"><i class="far fa-cart-shopping"></i>My
+                                    Cart</a></li>
+                        </ul>
+                    </nav>
+                    <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
                 </div>
-                <nav>
-                    <ul id="menuitems">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="products.html">Products</a></li>
-                        <li><a href="404.html">About</a></li>
-                        <li><a href="404.html">Account</a></li>
-                    </ul>
-                </nav>
-                <a href="cart.html"><img src="images/cart.png" width="30px" height="30px" style="cursor: pointer;"></a>
-                <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+                <div class="row">
+                    <div class="column-2">
+                        <h1>Give Your Body<br>A New Look Style</h1>
+                        <p>We see our customers as invited guests to a party, and we are the hosts.<br>It’s our job
+                            every
+                            day to make every important aspect of the customer experience a little bit better.</p>
+                        <a href="#" class="btn">Explore Now &#8594</a>
+                    </div>
+                    <div class="column-2">
+                        <img src="images/young.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- featured categories -->
+        <div class="categories">
+            <div class="small-container">
+                <div class="row">
+                    <div class="col-3">
+                        <img src="images/category-1.jpg">
+                    </div>
+                    <div class="col-3">
+                        <img src="images/category-2.jpg">
+                    </div>
+                    <div class="col-3">
+                        <img src="images/category-3.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- featured products -->
+        <div class="small-container" id="products">
+            <h2 class="title">Featured Products</h2>
+            <div class="row">
+                <div class="col-4">
+                    <a href="#"><img src="images/product-1.jpg" class="product-image">
+                        <h4 class="product-title">Red Printed T-Shirt</h4>
+                    </a>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p class="product-price">₹2300</p>
+                    <i class="far fa-cart-shopping btn add-cart"></i>
+                </div>
+                <div class="col-4">
+                    <a href="#">
+                        <img src="images/product-2.jpg" class="product-image">
+                        <h4 class="product-title">HRX Shoes</h4>
+                    </a>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p class="product-price">₹2500</p>
+                    <i class="far fa-cart-shopping btn add-cart"></i>
+                </div>
+                <div class="col-4">
+                    <a href="#">
+                        <img src="images/product-3.jpg" class="product-image">
+                        <h4 class="product-title">Payjama</h4>
+                    </a>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    <p class="product-price">₹3000</p>
+                    <i class="far fa-cart-shopping btn add-cart"></i>
+                </div>
+                <div class="col-4">
+                    <a href="#">
+                        <img src="images/product-4.jpg" class="product-price">
+                        <h4 class="product-title">Blue Printed Puma T-Shirt</h4>
+                    </a>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p class="product-price">₹2500</p>
+                    <i class="far fa-cart-shopping btn add-cart"></i>
+                </div>
             </div>
             <div class="row">
-                <div class="column-2">
-                    <h1>Give Your Body<br>A New Look Style</h1>
-                    <p>We see our customers as invited guests to a party, and we are the hosts.<br>It’s our job every
-                        day to make every important aspect of the customer experience a little bit better.</p>
-                    <a href="products.html" class="btn">Explore Now &#8594</a>
+                <div class="col-4">
+                    <a href="#">
+                        <img src="images/product-6.jpg" class="product-image">
+                        <h4 class="product-title">Black Printed Puma T-Shirt</h4>
+                    </a>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p class="product-price">₹3400</p>
+                    <i class="far fa-cart-shopping btn add-cart"></i>
                 </div>
-                <div class="column-2">
-                    <img src="images/young.png">
+                <div class="col-4">
+                    <a href="#">
+                        <img src="images/product-7.jpg" class="product-image">
+                        <h4 class="product-title">HRX Shocks</h4>
+                    </a>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p class="product-price">₹250</p>
+                    <i class="far fa-cart-shopping btn add-cart"></i>
+                </div>
+                <div class="col-4">
+                    <a href="#">
+                        <img src="images/product-12.jpg" class="product-image">
+                        <h4 class="product-title">Payjama</h4>
+                    </a>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    <p class="product-price">₹4500</p>
+                    <i class="far fa-cart-shopping btn add-cart"></i>
+                </div>
+                <div class="col-4">
+                    <a href="#">
+                        <img src="images/product-9.jpg" class="product-image">
+                        <h4 class="product-title">Roadster Watch</h4>
+                    </a>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p class="product-price">₹3500</p>
+                    <i class="far fa-cart-shopping btn add-cart"></i>
                 </div>
             </div>
-        </div>
-    </div>
-
-    <!-- featured categories -->
-    <div class="categories">
-        <div class="small-container">
             <div class="row">
-                <div class="col-3">
-                    <img src="images/category-1.jpg">
+                <div class="col-4">
+                    <a href="#">
+                        <img src="images/product-10.jpg" class="product-image">
+                        <h4 class="product-title">HRX Shoes</h4>
+                    </a>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p class="product-price">₹3400</p>
+                    <i class="far fa-cart-shopping btn add-cart"></i>
                 </div>
-                <div class="col-3">
-                    <img src="images/category-2.jpg">
+                <div class="col-4">
+                    <a href="#">
+                        <img src="images/product-8.jpg" class="product-image">
+                        <h4 class="product-title">Fossil Watch</h4>
+                    </a>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p class="product-price">₹2500</p>
+                    <i class="far fa-cart-shopping btn add-cart"></i>
                 </div>
-                <div class="col-3">
-                    <img src="images/category-3.jpg">
+                <div class="col-4">
+                    <a href="#">
+                        <img src="images/product-5.jpg" class="product-image">
+                        <h4 class="product-title">Light Grey Sneakers</h4>
+                    </a>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    <p class="product-price">₹2400</p>
+                    <i class="far fa-cart-shopping btn add-cart"></i>
+                </div>
+                <div class="col-4">
+                    <a href="#">
+                        <img src="images/product-11.jpg" class="product-image">
+                        <h4 class="product-title">Grey Softride Shoes</h4>
+                    </a>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p class="product-price">₹1500</p>
+                    <i class="far fa-cart-shopping btn add-cart"></i>
                 </div>
             </div>
         </div>
-    </div>
 
-    <!-- featured products -->
-    <div class="small-container">
-        <h2 class="title">Featured Products</h2>
-        <div class="row">
-            <div class="col-4">
-                <a href="products.html"><img src="images/product-1.jpg">
-                    <h4>Red Printed T-Shirt</h4>
-                </a>
-                <div class="rating">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star-o"></i>
+        <!-- Offers -->
+        <div class="offer">
+            <div class="small-container">
+                <div class="row">
+                    <div class="column-2">
+                        <img src="images/exclusive.png" class="offer-img">
+                    </div>
+                    <div class="column-2">
+                        <p>Exclusively Available on Fashion Ghost</p>
+                        <h1>Smart Band 4</h1>
+                        <small>Mi Smart Band 4 will track your heart rate, calories burned and more. as you climb
+                            mountain
+                            roads or dash around the city. Whether you're doing high-speed battle rope training or an
+                            aerobic battle rope workout, Mi Smart Band 4 will track your heart rate, calories burned and
+                            more.</small>
+                        <br>
+                        <a href="#" class="btn">Buy Now &#8594;</a>
+                    </div>
                 </div>
-                <p>₹2300</p>
-            </div>
-            <div class="col-4">
-                <a href="404.html">
-                    <img src="images/product-2.jpg">
-                    <h4>HRX Shoes</h4>
-                </a>
-                <div class="rating">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star-half-o"></i>
-                    <i class="fa fa-star-o"></i>
-                </div>
-                <p>₹2500</p>
-            </div>
-            <div class="col-4">
-                <a href="404.html">
-                    <img src="images/product-3.jpg">
-                    <h4>Payjama</h4>
-                </a>
-                <div class="rating">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star-half-o"></i>
-                </div>
-                <p>₹3000</p>
-            </div>
-            <div class="col-4">
-                <a href="404.html">
-                    <img src="images/product-4.jpg">
-                    <h4>Blue Printed Puma T-Shirt</h4>
-                </a>
-                <div class="rating">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star-half-o"></i>
-                    <i class="fa fa-star-o"></i>
-                </div>
-                <p>₹2500</p>
             </div>
         </div>
-        <div class="row">
-            <div class="col-4">
-                <a href="404.html">
-                    <img src="images/product-6.jpg">
-                    <h4>Black Printed Puma T-Shirt</h4>
-                </a>
-                <div class="rating">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star-o"></i>
-                </div>
-                <p>₹3400</p>
-            </div>
-            <div class="col-4">
-                <a href="404.html">
-                    <img src="images/product-7.jpg">
-                    <h4>HRX Shocks</h4>
-                </a>
-                <div class="rating">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star-half-o"></i>
-                    <i class="fa fa-star-o"></i>
-                </div>
-                <p>₹250</p>
-            </div>
-            <div class="col-4">
-                <a href="404.html">
-                    <img src="images/product-12.jpg">
-                    <h4>Payjama</h4>
-                </a>
-                <div class="rating">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star-half-o"></i>
-                </div>
-                <p>₹4500</p>
-            </div>
-            <div class="col-4">
-                <a href="404.html">
-                    <img src="images/product-9.jpg">
-                    <h4>Roadster Watch</h4>
-                </a>
-                <div class="rating">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star-o"></i>
-                </div>
-                <p>₹3500</p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-4">
-                <a href="404.html">
-                    <img src="images/product-10.jpg">
-                    <h4>HRX Shoes</h4>
-                </a>
-                <div class="rating">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star-o"></i>
-                </div>
-                <p>₹3400</p>
-            </div>
-            <div class="col-4">
-                <a href="404.html">
-                    <img src="images/product-8.jpg">
-                    <h4>Fossil Watch</h4>
-                </a>
-                <div class="rating">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star-half-o"></i>
-                    <i class="fa fa-star-o"></i>
-                </div>
-                <p>₹2500</p>
-            </div>
-            <div class="col-4">
-                <a href="404.html">
-                    <img src="images/product-5.jpg">
-                    <h4>Light Grey Sneakers</h4>
-                </a>
-                <div class="rating">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star-half-o"></i>
-                </div>
-                <p>₹2400</p>
-            </div>
-            <div class="col-4">
-                <a href="404.html">
-                    <img src="images/product-11.jpg">
-                    <h4>Grey Softride Shoes</h4>
-                </a>
-                <div class="rating">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star-half-o"></i>
-                    <i class="fa fa-star-o"></i>
-                </div>
-                <p>₹1500</p>
-            </div>
-        </div>
-    </div>
 
-    <!-- Offers -->
-    <div class="offer">
-        <div class="small-container">
-            <div class="row">
-                <div class="column-2">
-                    <img src="images/exclusive.png" class="offer-img">
+        <!-- footer -->
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col1">
+                        <img src="logoandicons/logo1 (1).png">
+                        <p>Our Purpose Is To Sustainably Make the Pleasure and Benefits of Fashion Accessible to the
+                            Many.
+                        </p>
+                    </div>
+                    <div class="footer-col2">
+                        <h3>Useful Links</h3>
+                        <ul>
+                            <li>Coupons</li>
+                            <li>Return Policy</li>
+                            <li>Join Affiliate</li>
+                        </ul>
+                    </div>
+                    <div class="footer-col3">
+                        <h3>Follow us</h3>
+                        <ul>
+                            <li>Facebook</li>
+                            <li>Instagram</li>
+                            <li>Whatsapp</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="column-2">
-                    <p>Exclusively Available on Fashion Ghost</p>
-                    <h1>Smart Band 4</h1>
-                    <small>Mi Smart Band 4 will track your heart rate, calories burned and more. as you climb mountain
-                        roads or dash around the city. Whether you're doing high-speed battle rope training or an
-                        aerobic battle rope workout, Mi Smart Band 4 will track your heart rate, calories burned and
-                        more.</small>
-                    <br>
-                    <a href="#" class="btn">Buy Now &#8594;</a>
-                </div>
+                <hr>
+                <p class="copyright">&#169; Copyright 2025 - Samyak</p>
             </div>
         </div>
-    </div>
+        <script src="./js/script.js"></script>
+        <!-- JavaScript for toggle menu -->
+        <script>
+            document.preventDefault();
+            var menuitems = document.getElementById("menuitems");
+            menuitems.style.maxHeight = "0px";
 
-    <!-- footer -->
-    <div class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="footer-col1">
-                    <img src="logoandicons/logo1 (1).png">
-                    <p>Our Purpose Is To Sustainably Make the Pleasure and Benefits of Fashion Accessible to the Many.
-                    </p>
-                </div>
-                <div class="footer-col2">
-                    <h3>Useful Links</h3>
-                    <ul>
-                        <li>Coupons</li>
-                        <li>Return Policy</li>
-                        <li>Join Affiliate</li>
-                    </ul>
-                </div>
-                <div class="footer-col3">
-                    <h3>Follow us</h3>
-                    <ul>
-                        <li>Facebook</li>
-                        <li>Instagram</li>
-                        <li>Whatsapp</li>
-                    </ul>
-                </div>
-            </div>
-            <hr>
-            <p class="copyright">&#169; Copyright 2022 - Vipul</p>
-        </div>
-    </div>
-
-    <!-- JavaScript for toggle menu -->
-    <script>
-        var menuitems = document.getElementById("menuitems");
-        menuitems.style.maxHeight = "0px";
-
-        function menutoggle() {
-            if (menuitems.style.maxHeight == "0px") {
-                menuitems.style.maxHeight = "200px";
+            function menutoggle() {
+                if (menuitems.style.maxHeight == "0px") {
+                    menuitems.style.maxHeight = "200px";
+                }
+                else {
+                    menuitems.style.maxHeight = "0px";
+                }
             }
-            else {
-                menuitems.style.maxHeight = "0px";
-            }
-        }
-    </script>
+        </script>
 
-</body>
+    </body>
 
 </html>
