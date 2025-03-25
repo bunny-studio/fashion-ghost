@@ -128,6 +128,28 @@
         <!-- JavaScript for toggle menu -->
         <script src="./js/script.js"></script>
  <script src="./js/common.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        // Select the checkout button
+        let checkoutButton = document.querySelector(".btn-buy"); // Ensure this is the correct button
+        let checkoutForm = document.getElementById("checkoutForm");
+
+        if (checkoutButton) {
+            checkoutButton.addEventListener("click", function (event) {
+                event.preventDefault(); // Prevent default action
+
+                let cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
+                if (cartItems.length === 0) {
+                    alert("Your cart is empty!");
+                    return;
+                }
+
+                // Show the checkout form
+                checkoutForm.style.display = "block";
+            });
+        }
+    });
+</script>
     </body>
 
 </html>
