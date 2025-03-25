@@ -26,7 +26,6 @@
 nav{
     flex: 1;
     text-align: right;
-z-index:999;
 }
 
 nav ul {
@@ -184,6 +183,14 @@ p{
     min-width: 200px;
     margin-bottom: 50px;
     transition: transform 0.5s;
+}
+
+.col-3 img{
+    width: 100%;
+    transition: transform 0.5s;
+    transform: scale(1);
+    height: 500px;
+    aspect-ratio: 9 / 16;
 }
 
 .col-4 img{
@@ -591,7 +598,7 @@ td img{
     }
 
     .column-2, .col-3, .col-4{
-        flex-basis: 100%;
+        flex-basis: 100%; 
     }
 
     .single-product .row{

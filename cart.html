@@ -54,9 +54,7 @@
                 <div class="price-description">
                     <p class="total-title">Total :  <span class="total-price">₹0</span></p>
                 </div>
-                <button type="button" class="btn btn-buy">Proceed To Checkout</button>
-            </div>
-            <div class="checkoutForm customer" id="checkoutForm" style="display: none;">
+                <div class="checkoutForm customer" id="checkoutForm" style="display: block;">
                 <h2>Order Summary</h2>
                 <form action="#">
                     <div class="firstContainer">
@@ -88,8 +86,10 @@
                         <span class="highlights">Scan me to complete your transcation</span>
                         <img src="./images/qr.png" alt="Pay Now">
                     </div>
-                    <button type="submit" class="btn">Pay Now</button>
+                   <button type="button" class="btn btn-buy">Proceed To Checkout</button>
+                    <!-- <button type="submit" class="btn">Pay Now</button> -->
                 </form>
+            </div>
             </div>
         </div>
         <!-- footer -->
@@ -121,35 +121,25 @@
                     </div>
                 </div>
                 <hr>
-                <p class="copyright">&#169; Copyright 2025 - Samyak</p>
+                <p class="copyright">&#169; Copyright 2025</p>
             </div>
         </div>
 
         <!-- JavaScript for toggle menu -->
         <script src="./js/script.js"></script>
- <script src="./js/common.js"></script>
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        // Select the checkout button
-        let checkoutButton = document.querySelector(".btn-buy"); // Ensure this is the correct button
-        let checkoutForm = document.getElementById("checkoutForm");
+        <script>
+            var menuitems = document.getElementById("menuitems");
+            menuitems.style.maxHeight = "0px";
 
-        if (checkoutButton) {
-            checkoutButton.addEventListener("click", function (event) {
-                event.preventDefault(); // Prevent default action
-
-                let cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
-                if (cartItems.length === 0) {
-                    alert("Your cart is empty!");
-                    return;
+            function menutoggle() {
+                if (menuitems.style.maxHeight == "0px") {
+                    menuitems.style.maxHeight = "200px";
                 }
-
-                // Show the checkout form
-                checkoutForm.style.display = "block";
-            });
-        }
-    });
-</script>
+                else {
+                    menuitems.style.maxHeight = "0px";
+                }
+            }
+        </script>
     </body>
 
 </html>

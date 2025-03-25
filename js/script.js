@@ -1,6 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
   loadCartItems();
-
 });
 
 // Function to load cart items from localStorage
